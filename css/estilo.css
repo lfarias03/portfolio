@@ -23,6 +23,22 @@
     text-align: center;
 }
 
+.textoInicio{
+    display: block;
+    white-space: nowrap;
+    width: 50ch;
+    animation: typing 2s steps(50), 
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from {width: 0;}
+}
+
+@keyframes blink {
+    100% {border-color: transparent;}
+}
 /*fin texto principal pagina home*/
 
 /*fin pagina home*/
@@ -223,17 +239,26 @@
     display: inline-flex;
     justify-content: center;
     box-shadow: 0 0 7px 0 #0D7FBB; 
- }
- 
+}
+
+.icons-div button:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 200ms;
+    box-shadow: 0 0 15px 0 #0D7FBB;
+    background-color: black;
+    color: white;
+    margin: 15px;
+}
+
 .icons-div {
-     width: 100%;
-     margin: auto;
-     margin-bottom: 0px;
-     align-items: center;
-     justify-content: center;
-     float: left;
- }
- 
+    width: 100%;
+    margin: auto;
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
 .presentacion {
     color: white;
     width: 65%;
@@ -243,7 +268,7 @@
     font-weight: bolder;
     margin-right: 5px;
     text-align: left;
- }
+}
 
 .informacion {
     color: rgba(255, 255, 255, 0.5);
@@ -252,26 +277,25 @@
     font-size: 20px;
     margin-right: 5px;
     text-align: left;
- }
+}
 
 .informacion a {
-     color: white;
- }
+    color: white;
+}
 
 .informacion a:hover {
-     text-decoration: none;
-
- }
+    text-decoration: none;
+}
 
 .datos {
-     color: white;
-     font-weight: bolder;
- }
+    color: white;
+    font-weight: bolder;
+}
 
 .about-section div{
     height: 100vh;
     width: 100%;
- }
+}
 
 .about-section h2 {
     color: white;
@@ -279,7 +303,7 @@
     text-decoration: underline #0D7FBB 4px;
     align-items: center;
     margin-bottom: 20px;
- }
+}
 
 .titulos {
     color: white;
@@ -287,19 +311,18 @@
     text-decoration: underline #0D7FBB 4px;
     margin-top: 30px;
     margin-bottom: 40px;
- }
- 
+}
+
 .about-section h3 {
     color: rgba(255, 255, 255, 0.34);
     margin-left: 100px;
     margin-bottom: 10px;
     font-style: italic;
-   
- }
+}
 
- .about-section p {
+.about-section p {
     margin-bottom: 40px;
- }
+}
 
 .pantalla-dividida {
     width: 100%;
@@ -330,6 +353,14 @@
     border-bottom-right-radius: 15px;
     border-top-left-radius: 15px;
     padding: 25px;
+}
+
+.plan:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 200ms;
+    box-shadow: 0 0 20px 0 #0D7FBB;
+    border: 5px solid #0D6EA0;
+    border-radius: 15px;
 }
 
 .plan p{
@@ -490,32 +521,39 @@
 
 /*haciendo la pagina home responsive*/
 @media (max-width: 720px) {
-   /*nav responsive*/
+/*nav responsive*/
     .mainColor {
     font-size: 15px;
     margin-top: 200px;
-   }
+}
 
-   .menuPrincipal{
+.textoInicio{
+    animation: typing 2s steps(50), 
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
     width: 100%;
-   }
+}
 
-   .menuPrincipal .logo img { 
+.menuPrincipal{
+    width: 100%;
+}
+
+.menuPrincipal .logo img { 
         width: 100%;
         max-width: 450px;
     }
 
-   .navDiv nav ul li{
+.navDiv nav ul li{
     padding: 10px;
     margin: 5px;
-   }
+}
 
-   .navDiv nav ul {
+.navDiv nav ul {
     flex-wrap: wrap;
     justify-content: center;
-   }
-   
-   .ulMenu li a{
+}
+
+.ulMenu li a{
     padding: 0px;
     }
 
@@ -532,38 +570,38 @@
     height: 100%;
     padding: 20px;
     z-index: 1;
-   }
-   /*fin nav responsive*/
-   
-   main {
+}
+/*fin nav responsive*/
+
+main {
     min-height: 75vh;
     margin-top: 200px;
-   }
-   /*footer responsive*/
+}
+/*footer responsive*/
 
-   .piePagina{
+.piePagina{
     margin-top: 40px;
     width: 100%;
     }
 
-   .piePagina .grupo-1 {
+.piePagina .grupo-1 {
     display: inline-block;
     grid-template-rows: auto;
     padding: 10px;
-   }
-   
-   .contact-form form {
-    justify-content: center;
-   }
+}
 
-   .contact-form {
+.contact-form form {
+    justify-content: center;
+}
+
+.contact-form {
     margin-top: 50px;
     margin-bottom: 50px;
     justify-content: center;
     }
 
     
-    /*fin footer responsive*/
+/*fin footer responsive*/
 }
 
 /*fin pagina home responsive*/
@@ -585,6 +623,13 @@
         margin-bottom: 35px;
     }
 
+    .plan:hover {
+            transform: scale(0.9, 0.9);
+            transition: all 200ms;
+            box-shadow: 0 0 20px 0 #0D7FBB;
+            border: 5px solid #0D6EA0;
+            border-radius: 15px;
+        }
 }
 /*fin pagina services responsive*/
 
