@@ -20,20 +20,29 @@
     font-size: 30px;
     height: 100px;
     margin-top: 10%;
-    text-align: center;
 }
 
+main {
+    width: 100%;
+}
+
+.mainColor div {
+    width: 100%;
+    text-align: center;
+}
 .textoInicio{
     display: block;
     white-space: nowrap;
     width: 50ch;
-    animation: typing 2s steps(50), 
+    animation: typing 0.8s steps(50), 
     blink .5s infinite step-end alternate;
     overflow: hidden;
 }
 
 @keyframes typing{
-    from {width: 0;}
+    from {
+        transform: scale(0, 0);
+    }
 }
 
 @keyframes blink {
@@ -94,8 +103,8 @@
 .piePagina{
     width: 100%;
     background-color: white;
-    margin-top: 25em;   
     text-align: center;
+    margin-top: 25em;
     position: absolute;
 }
 
@@ -533,12 +542,15 @@
 
 /*haciendo la pagina home responsive*/
 @media (max-width: 720px) {
-/*nav responsive*/
+
     .mainColor {
     font-size: 15px;
     margin-top: 200px;
-}
 
+
+
+}
+/*nav responsive*/
 .textoInicio{
     animation: typing 2s steps(50), 
     blink .5s infinite step-end alternate;
@@ -586,14 +598,15 @@
 /*fin nav responsive*/
 
 main {
-    min-height: 75vh;
+    min-height: 100vh;
     margin-top: 200px;
 }
 /*footer responsive*/
 
 .piePagina{
-    margin-top: 40px;
     width: 100%;
+    margin-top: 5em;
+    
     }
 
 .piePagina .grupo-1 {
@@ -620,14 +633,38 @@ main {
 
 /*inicio pagina about me responsive*/
 @media (max-width: 720px) {
-    
+
+    .presentacion, 
+    .informacion,
+    .skills {
+        font-size: 15px;
+    }
+
+    .pantalla-dividida {
+        width: 100%;
+        display: block;
+        margin-top: 30px;
+    }
+
+    .languages-skills,
+    .skills {
+        width: 100%;
+        text-align: center;
+    }
+
+    .languages {
+        margin-bottom: 25em;
+    }
+
 }
 /*fin pagina about me responsive*/
 
 /*inicio pagina services responsive*/
 @media (max-width: 720px) {
     .cuadrosPlanes {
-    grid-template-columns: 450px;
+    grid-template-columns: 330px;
+    grid-gap: 30px;
+    height: 50%;
     }
     
     .plan {
@@ -652,3 +689,7 @@ main {
     }
 }
 /*fin pagina projects responsive*/
+
+/*inicio pagina contact responsive*/
+
+/*fin pagina contact responsive*/
