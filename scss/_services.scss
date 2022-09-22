@@ -1,0 +1,74 @@
+/*inicio estilo pagina services*/
+.cuadrosPlanes{
+    width: 100%;
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    grid-gap: 60px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.plan {
+    background-image: url("../imagenes/fondo312.PNG");
+    background-repeat:no-repeat;
+    background-size:cover;
+    display: block;
+    text-align: center;
+    box-shadow: 3px 3px #0D6EA0;
+    border: 5px solid #fff;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 25px;
+    &:hover {
+        transform: scale(1.1, 1.1);
+        transition: all 200ms;
+        box-shadow: 0 0 20px 0 #0D7FBB;
+        border: 5px solid #0D6EA0;
+        border-radius: 15px;
+    }
+    p{
+        color: white;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    h3{
+        color: white;
+        font-size: 30px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        padding: 30px;
+        text-shadow: 5px 5px black;
+    }
+    div{
+        margin-bottom: 30px;
+    }
+    h2{
+        color: white;
+        font-size: 30px;
+        text-shadow: 3px 3px #0D7FBB;
+    }
+}
+
+.boton{
+    margin-top: 30px;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    box-shadow: 0 0 7px 0 #0D7FBB;
+    transition: 0.2s;
+    overflow: hidden;
+    &:hover{
+        background-color: white;
+        box-shadow: 0 0 20px 0 black, 0 0 10px white, 0 0 10px white;
+        color: #0D7FBB;
+        transition: 0.5s ease-in;
+    }
+}
+
+/*fin estilo pagina services*/

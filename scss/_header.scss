@@ -1,0 +1,34 @@
+/*inicio del header*/
+.logo {
+    float: left;
+}
+.menuPrincipal {
+    display: inline-block;
+    margin-top: 30px;
+    width: 100%;
+}
+.ulMenu{
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-flex;
+    float: right;
+    align-items: center;
+    li a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 15px;
+    }
+    a:hover{
+        color: #0D7FBB;
+    }
+    li a:hover{
+        border-radius: 15px;
+        padding: 14px;
+        background: #fff;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+/*fin del header*/

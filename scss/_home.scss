@@ -1,0 +1,51 @@
+/*pagina home*/
+
+main{
+    width: 100%;
+}
+.fondoIndex {
+    background-image: url("../imagenes/fondo312.PNG");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+    
+/*texto principal de la pagina home*/
+    
+.mainColor{
+    color: white;
+    font-size: 30px;
+    height: 100px;
+    margin-top: 10%;
+    div {
+        width: 100%;
+        text-align: center;
+    }
+}
+    
+.mainIndex {
+    margin-bottom: 10em;
+}
+
+.textoInicio{
+    display: block;
+    white-space: nowrap;
+    width: 50ch;
+    animation: typing 0.8s steps(50), 
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+    
+@keyframes typing{
+    from {
+        transform: scale(0, 0);
+    }
+}
+    
+@keyframes blink {
+    100% {border-color: transparent;}
+}
+/*fin texto principal pagina home*/
+
+
+/*fin pagina home*/
+

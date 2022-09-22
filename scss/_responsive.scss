@@ -1,0 +1,136 @@
+/*haciendo la pagina home responsive*/
+
+@media (max-width: 720px) {
+    .mainColor {
+    font-size: 15px;
+    margin-top: 200px;
+}
+
+/*nav responsive*/
+
+.textoInicio{
+    animation: typing 2s steps(50), 
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+    width: 100%;
+}
+
+.menuPrincipal{
+    width: 100%;
+    .logo img { 
+        width: 100%;
+        max-width: 450px;
+    }
+    nav{
+        justify-content: center;
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        z-index: 1;
+    }
+}
+
+.navDiv {
+    nav ul li{
+    padding: 10px;
+    margin: 5px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+.ulMenu {
+    li a{
+        padding: 0px;
+        &:hover{
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            }
+        }
+}
+/*fin nav responsive*/
+
+main {
+    min-height: 100vh;
+    margin-top: 200px;
+}
+/*footer responsive*/
+
+.piePagina{
+    width: 100%;
+    margin-top: 5em;
+    .grupo-1 {
+        display: inline-block;
+        grid-template-rows: auto;
+        padding: 10px;
+    }
+    }
+
+.contact-form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    form {
+        justify-content: center;
+    }
+    }
+
+    
+/*fin footer responsive*/
+}
+
+/*fin pagina home responsive*/
+
+/*inicio pagina about me responsive*/
+@media (max-width: 720px) {
+
+    .presentacion, 
+    .informacion,
+    .skills {
+        font-size: 15px;
+    }
+
+    .pantalla-dividida {
+        width: 100%;
+        display: block;
+        margin-top: 30px;
+    }
+
+    .languages-skills,
+    .skills {
+        width: 100%;
+        text-align: center;
+    }
+
+    .languages {
+        margin-bottom: 25em;
+    }
+}
+/*fin pagina about me responsive*/
+
+/*inicio pagina services responsive*/
+@media (max-width: 720px) {
+    .cuadrosPlanes {
+    grid-template-columns: 330px;
+    grid-gap: 30px;
+    height: 50%;
+    }
+    
+    .plan {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        &:hover {
+            transform: scale(0.9, 0.9);
+            transition: all 200ms;
+            box-shadow: 0 0 20px 0 #0D7FBB;
+            border: 5px solid #0D6EA0;
+            border-radius: 15px;
+        }
+    }
+}
+/*fin pagina services responsive*/
