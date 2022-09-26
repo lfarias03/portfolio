@@ -389,6 +389,23 @@ main {
 
 /*fin estilo pagina contact*/
 /*inicio estilo pagina projects*/
+.card-project {
+  background: linear-gradient(-30deg, black, #0D7FBB);
+  margin: 10px;
+  border-radius: 10px; }
+
+.text-style {
+  color: white; }
+
+.card-style {
+  transition: all 200ms; }
+  .card-style:hover {
+    background-image: url(../imagenes/fondo312.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.1);
+    transition: all 200ms; }
+
 /*fin estilo pagina projects*/
 /*haciendo la pagina home responsive*/
 @media (max-width: 720px) {

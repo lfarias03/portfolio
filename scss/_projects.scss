@@ -1,3 +1,22 @@
 /*inicio estilo pagina projects*/
+.card-project {
+    background: linear-gradient(-30deg, black, $azul_base);
+    margin: 10px;
+    border-radius: 10px;
+}
 
+.text-style {
+    color: white;
+}
+
+.card-style {
+    transition: all 200ms;
+    &:hover{
+        background-image:url(../imagenes/fondo312.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scale(1.1);
+        transition: all 200ms;
+    }
+}
 /*fin estilo pagina projects*/
