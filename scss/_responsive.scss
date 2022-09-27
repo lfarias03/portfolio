@@ -134,3 +134,11 @@ main {
     }
 }
 /*fin pagina services responsive*/
+@media (max-width: 720px) {
+.card-style {
+    &:hover{
+        transform: translate(0px, 10px);
+        transition:all 200ms;
+        }
+    }
+}
