@@ -1,5 +1,4 @@
 /*inicio de contenido pagina about me*/
-
 .skills { 
     color: white;
     font-size: 25px;
@@ -71,6 +70,7 @@
 }
 
 .datos {
+    @extend .informacion;
     color: white;
     font-weight: bolder;
 }
@@ -99,7 +99,7 @@
 }
 
 .titulos {
-    @include titulo($texto_blanco);
+    @include formato-titulo;
 }
 
 .pantalla-dividida {

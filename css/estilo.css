@@ -218,16 +218,16 @@ main {
   margin-right: 5px;
   text-align: left; }
 
-.informacion {
+.informacion, .datos {
   color: rgba(255, 255, 255, 0.5);
   width: 50%;
   margin-left: 100px;
   font-size: 20px;
   margin-right: 5px;
   text-align: left; }
-  .informacion a {
+  .informacion a, .datos a {
     color: white; }
-    .informacion a:hover {
+    .informacion a:hover, .datos a:hover {
       text-decoration: none; }
 
 .datos {
@@ -300,8 +300,8 @@ main {
     margin-top: 30px; }
   .plan h3 {
     color: white;
-    font-size: 30px;
-    margin-top: 40px;
+    font-size: 20px;
+    margin-top: 30px;
     margin-bottom: 10px;
     padding: 30px;
     text-shadow: 5px 5px black; }
@@ -464,8 +464,7 @@ main {
 /*fin pagina home responsive*/
 /*inicio pagina about me responsive*/
 @media (max-width: 720px) {
-  .presentacion,
-  .informacion,
+  .presentacion, .informacion, .datos,
   .skills {
     font-size: 15px; }
   .pantalla-dividida {
@@ -478,6 +477,13 @@ main {
     text-align: center; }
   .languages {
     margin-bottom: 25em; } }
+
+.datos {
+  width: 100%;
+  margin-left: 0px;
+  font-size: 20px;
+  margin-right: 0px;
+  text-align: start; }
 
 /*fin pagina about me responsive*/
 /*inicio pagina services responsive*/

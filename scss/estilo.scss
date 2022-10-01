@@ -5,6 +5,14 @@ $estilos:(
     centro: center,
 );
 
+@mixin formato-titulo {
+    color: white;
+    text-align: center;
+    text-decoration: underline #0D7FBB 4px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -18,14 +26,6 @@ $estilos:(
 
 .colorDoble {
     color: #0D7FBB;
-}
-
-@mixin titulo {
-    color: $color;
-    text-align: center;
-    text-decoration: underline #0D7FBB 4px;
-    margin-top: 30px;
-    margin-bottom: 40px;
 }
 
 @import "header";
