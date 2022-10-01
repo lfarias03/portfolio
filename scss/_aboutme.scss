@@ -99,13 +99,8 @@
 }
 
 .titulos {
-    color: white;
-    text-align: center;
-    text-decoration: underline #0D7FBB 4px;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    @include titulo($texto_blanco);
 }
-
 
 .pantalla-dividida {
     width: 100%;
