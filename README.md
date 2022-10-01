@@ -1,1 +1,1 @@
-Mi nombre es Lucas Farias y este es mi portafolio con todos mis proyectos realizados hasta el dia de la fecha.
+Agregue una descripcion a cada seccion de mi pagina con la leyenda "Portafolio con mis proyectos de programacion y oferta de servicios para Desarrollo WEB." y, ademas agregue las keywords "HTML, CSS, JS, JAVASCRIPT, REACTJS, PORTAFOLIO, PROYECTO, PORTFOLIO" para que mi pagina se posicione en esas busquedas.
