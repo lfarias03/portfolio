@@ -13,6 +13,7 @@
     display: inline-flex;
     float: right;
     align-items: center;
+    margin-right: 30px;
     li a{
         color: white;
         text-decoration: none;
@@ -21,10 +22,8 @@
     }
     a:hover{
         color: #0D7FBB;
-    }
-    li a:hover{
         border-radius: 15px;
-        padding: 14px;
+        padding: 12px;
         background: #fff;
         text-decoration: none;
         text-align: center;

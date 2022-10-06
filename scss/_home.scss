@@ -29,7 +29,7 @@ main{
 .textoInicio{
     display: block;
     white-space: nowrap;
-    width: 50ch;
+    width: 100%;
     animation: typing 0.8s steps(50), 
     blink .5s infinite step-end alternate;
     overflow: hidden;
